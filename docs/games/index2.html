@@ -1,1 +1,145 @@
+<html lang="en">
+    <head>
+        <script src="/register-sw.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Access Center</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/Images/hac-logo.ico">
+        <link rel="stylesheet" href="./index.css">
+        <script type="text/javascript" src="/uv/uv.bundle.js"></script>
+        <script type="text/javascript" src="/uv/uv.config.js"></script>
+    </head>
+    <body>
+        <div id="Main">
+            <h1>Games</h1>
+            <br>
+             <a class="back-btn" href=https://homeaccesscenter.neocities.org>Back</a>
+            <br> <br>
+            <input id="gameInput" class="gamesearch-input" placeholder="Search Games..." onkeyup="search()">
+            <br>
+            <br>
+            <div id="gameButtons">
+                 <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/cookieclicker/index.html'));">
+                 <img class="imgIcon" src="/Games/cookieclicker/favicon.ico">Cookie Clicker
+                </button>
+                 <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/slope/slope.html'));">
+                    <img class="imgIcon" src="/Games/slope/slope.jpeg">Slope
+                </button>
+                 <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/drivemad/index.html'))" 
+                    <img class="imgIcon" src="/Games/drivemad/favicon.ico">Drive Mad
+                </button>
+                <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/retrobowl/index.html'));">
+                    <img class="imgIcon" src="/Games/retrobowl/favicon.ico">Retro Bowl
+                </button>
+                <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/crossyroad/index.html'));">
+                    <img class="imgIcon" src="/Games/crossyroad/favicon.ico">Crossy Road
+                </button>
+                <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/basketballstars/index.html'));">
+                    <img class="imgIcon" src="/Games/basketballstars/favicon.ico">BasketBall Stars
+                </button>
+                <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/subwaysurfers/index.html'));">
+                    <img class="imgIcon" src="/Games/subwaysurfers/favicon.ico">Subway Surfers
+                </button>
+                 <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/snowrider/index.html'));">
+                    <img class="imgIcon" src="/Games/snowrider/favicon.ico">Snow Rider 3D
+                </button>
+                <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/tunnelrush/index.html'));">
+                    <img class="imgIcon" src="/Games/tunnelrush/favicon.ico">Tunnel Rush
+                </button>
+                <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/timeshooter/index.html'));">
+                    <img class="imgIcon" src="/Games/timeshooter/favicon.ico">Time Shooter
+                </button>
+                 <button class="btn" onclick="openNewTab(window.location.origin.concat('./Games/deathrun/index.html'));">
+                    <img class="imgIcon" src="/Games/deathrun/favicon.ico">Death Run 3D
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/minecraft/index.html'));">
+                    <img class="imgIcon" src="/Games/minecraft/favicon.ico">Minecraft
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/bitlife/index.html'));">
+                    <img class="imgIcon" src="/Games/bitlife/bitlife.png">BitLife
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/fnf/index.html'));">
+                    <img class="imgIcon" src="/Games/fnf/fnf-icon.jpg">Friday Night Funkin
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/fnaf/fnaf1/index.html'));">
+                    <img class="imgIcon" src="/Games/fnaf/fnaf1/splash.jpg">Fnaf 1
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/fnaf/fnaf2/index.html'));">
+                    <img class="imgIcon" src="/Games/fnaf/fnaf2/splash.webp">Fnaf 2
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/fnaf/fnaf3/index.html'));">
+                    <img class="imgIcon" src="/Games/fnaf/fnaf3/splash.webp">Fnaf 3
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/fnaf/fnaf4/index.html'));">
+                    <img class="imgIcon" src="/Games/fnaf/fnaf4/splash.webp">Fnaf 4
+                </button>
+                 <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/soundboard/index.html'));">
+                    SoundBoard
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/eggycar/index.html'));">
+                    <img class="imgIcon" src="/Games/eggycar/favicon.png">Eggy Car
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/paperio2/index.html'));">
+                    <img class="imgIcon" src="/Games/paperio2/favicon.png">Paper io 2
+                </button>
+                 <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/burritobison/index.html'));">
+                    <img class="imgIcon" src="/Games/burritobison/favicon.png">Burrito Bison
+                </button>
+                 <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/dogeminer/index.html'));">
+                    <img class="imgIcon" src="/Games/dogeminer/dogeminer.webp">Doge Miner
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/ducklife2/index.html'));">
+                    <img class="imgIcon" src="/Games/ducklife2/ducklife2.jpg">Duck Life 2
+                </button>
+                 <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/btd5/index.html'));">
+                    <img class="imgIcon" src="/Games/btd5/btd-5.png">Bloons TD 5
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/crazycattle/index.html'));">
+                    <img class="imgIcon" src="/Games/crazycattle/OIP.webp">Crazy Cattle 3D
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/doodlejump/index.html'));">
+                    <img class="imgIcon" src="/Games/doodlejump/512x512bb.jpg">Doodle Jump
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/bloxors/index.html'));">
+                    <img class="imgIcon" src="/Games/bloxors/OIP.webp">Bloxorz
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/fakestake/index.html'));">
+                    <img class="imgIcon" src="/Games/fakestake/chatgpt.png">Fake Stake
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/clashroyale/index.html'));">
+                    <img class="imgIcon" src="/Games/clashroyale/OIP.png">Clash Royale
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/driftboss/index.html'));">
+                    <img class="imgIcon" src="/Games/driftboss/OIP.webp">Drift Boss
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/minitanks/index.html'));">
+                    <img class="imgIcon" src="/Games/minitanks/mnmn.jpg">Mini Tanks
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/stickmanhook/index.html'));">
+                    <img class="imgIcon" src="/Games/stickmanhook/unnamed.jpg">Stickman Hook
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/tinyfishing/index.html'));">
+                    <img class="imgIcon" src="/Games/tinyfishing/OIP.webp">Tiny Fishing
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/redball4/index.html'));">
+                    <img class="imgIcon" src="/Games/redball4/OIP.webp">Red Ball 4
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/escape-road/index.html'));">
+                    <img class="imgIcon" src="/Games/escape-road/images.jpg">Escape Road
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/clustertruck/index.html'));">
+                    <img class="imgIcon" src="/Games/clustertruck/images.jpg">Cluster Truck
+                </button>
+                <button class="btn"fr onclick="openNewTab(window.location.origin.concat('./Games/8ballpool/8ball.html'));">
+                    <img class="imgIcon" src="/Games/8ballpool/hi.webp">8 Ball Billards
+                </button>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript" src="/cloak.js"></script>
+    <script type="text/javascript" src="/check.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+</html>
 
