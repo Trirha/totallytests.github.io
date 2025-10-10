@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        #content { display: none; }
+    </style>
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to my secured website!</h1>
+        <button onclick="signOut()">Sign Out</button>
+        <p>Access the secured content here.</p>
+    </div>
+
+    <div id="login">
+        <h2>Login Form</h2>
+        <input type="text" id="username" placeholder="Enter username" required>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <button onclick="signIn()">Sign In</button>
+    </div>
+</body>
+</html>
