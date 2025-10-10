@@ -65,17 +65,5 @@
         });
     };
 </script>
-<div id="content">
-        <h1>Games Section</h1>
-        <p>This is a secured games area of the site.</p>
-    </div>
-    <script>
-        // Redirects to the login page if not authenticated
-        if (!sessionStorage.getItem('isLoggedIn')) {
-            window.location.href = "/secured.html"; // Redirect to login page
-        }
-        // If logged in, show the content
-        document.getElementById('content').style.display = 'block';
-    </script>
 </body>
 </html>
