@@ -21,17 +21,33 @@
     </div>
 
     <script>
-        // Check if already logged in upon loading the login page
         window.onload = function() {
             const isLoggedIn = sessionStorage.getItem('isLoggedIn');
             if (isLoggedIn) {
-                window.location.href = "/games/index14.html"; // Redirect to the main content page
-            } else {
-                document.getElementById('login').style.display = 'block'; // Show login form
-            }
+                // Redirect to main games page if already logged in
+                window.location.href = "/games/website1.html"; 
+            } 
+            // If not logged in, show the login form
+            document.getElementById('login').style.display = 'block'; 
         };
 
-        // Existing signIn and signOut functions from auth.js would go here.
+        function signIn() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Check credentials
+            if (username === "yourUsername" && password === "yourPassword") {
+                sessionStorage.setItem('isLoggedIn', 'true'); // Set login session
+                window.location.href = "/games/website1.html"; // Redirect to games page
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+
+        function signOut() {
+            sessionStorage.removeItem('isLoggedIn'); // Remove the login session
+            window.location.href = "secured.html"; // Redirect to login page
+        }
     </script>
 </body>
 </html>
