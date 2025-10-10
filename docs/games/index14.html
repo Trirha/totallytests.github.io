@@ -72,7 +72,7 @@
     <script>
         // Redirects to the login page if not authenticated
         if (!sessionStorage.getItem('isLoggedIn')) {
-            window.location.href = "/index.html"; // Redirect to login page
+            window.location.href = "/secured.html"; // Redirect to login page
         }
         // If logged in, show the content
         document.getElementById('content').style.display = 'block';
