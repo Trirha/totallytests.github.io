@@ -139,6 +139,49 @@
                 </button>
             </div>
         </div>
+
+    <div id="content" style="display: none;">
+        <h1>Welcome to my secured website!</h1>
+        <button onclick="signOut()">Sign Out</button>
+        <p>Access the secured content here.</p>
+    </div>
+
+    <div id="login">
+        <h2>Login Form</h2>
+        <input type="text" id="username" placeholder="Enter username" required>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <button onclick="signIn()">Sign In</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+            if (isLoggedIn) {
+                // Redirect to main games page if already logged in
+                window.location.href = "/games/index14.html"; 
+            } 
+            // If not logged in, show the login form
+            document.getElementById('login').style.display = 'block'; 
+        };
+
+        function signIn() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Check credentials
+            if (username === "yourUsername" && password === "yourPassword") {
+                sessionStorage.setItem('isLoggedIn', 'true'); // Set login session
+                window.location.href = "/games/index14.html"; // Redirect to games page
+            } else {
+                alert("Incorrect username or password. Please try again.");
+            }
+        }
+
+        function signOut() {
+            sessionStorage.removeItem('isLoggedIn'); // Remove the login session
+            window.location.href = "index.html"; // Redirect to login page
+        }
+    </script>
     </body>
     <script type="text/javascript" src="./index.js"></script>
     <script type="text/javascript" src="/cloak.js"></script>
