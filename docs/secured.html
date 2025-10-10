@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <style>
-        #content { display: none; }
-    </style>
     <script src="auth.js" defer></script>
 </head>
 <body>
-    <div id="content">
+    <div id="content" style="display: none;">
         <h1>Welcome to my secured website!</h1>
         <button onclick="signOut()">Sign Out</button>
         <p>Access the secured content here.</p>
@@ -22,5 +19,19 @@
         <input type="password" id="password" placeholder="Enter password" required>
         <button onclick="signIn()">Sign In</button>
     </div>
+
+    <script>
+        // Check if already logged in upon loading the login page
+        window.onload = function() {
+            const isLoggedIn = sessionStorage.getItem('isLoggedIn');
+            if (isLoggedIn) {
+                window.location.href = "/games/index14.html"; // Redirect to the main content page
+            } else {
+                document.getElementById('login').style.display = 'block'; // Show login form
+            }
+        };
+
+        // Existing signIn and signOut functions from auth.js would go here.
+    </script>
 </body>
 </html>
